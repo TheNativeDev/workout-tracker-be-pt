@@ -8,6 +8,7 @@ describe("auth model", () => {
     expect(process.env.DB_ENV).toBe("testing");
   });
 
+  //
   describe("GET / ", () => {
     it("returns 200 ok", () => {
       return request(server).get("/").expect(200);
